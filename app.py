@@ -13,9 +13,9 @@ def home():
         "version": "1.0",
         "available_endpoints": {
             "Get all teams": "/api/teams",
-            "Head to Head": "/api/teamvteam?team1=Mumbai+Indians&team2=Chennai+Super+Kings",
-            "Team Record": "/api/team-record?team=Mumbai+Indians",
-            "All Matches of a Team": "/api/matches?team=Mumbai+Indians",
+            "Head to Head": "/api/teamvteam?team1=Mumbai Indians&team2=Chennai Super Kings",
+            "Team Record": "/api/team-record?team=Mumbai Indians",
+            "All Matches of a Team": "/api/matches?team=Mumbai Indians",
             "Match Details": "/api/match?id=1312200",
             "Points Table": "/api/points-table?season=2022"
         }
