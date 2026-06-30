@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 
-matches = pd.read_csv("data\IPL_Matches_2008_2022 (1).csv")
+matches = pd.read_csv("data/IPL_Matches_2008_2022 (1).csv")
 
 def teamsAPI():
     teams =  list(set(list(matches['Team1']) + list(matches['Team2'])))

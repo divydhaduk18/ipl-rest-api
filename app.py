@@ -4,9 +4,22 @@ import ipl as ipl
 app = Flask(__name__)
 app.json.sort_keys = False
 
+from flask import jsonify
+
 @app.route('/')
 def home():
-    return "Hello World"
+    return jsonify({
+        "message": "Welcome to IPL REST API",
+        "version": "1.0",
+        "available_endpoints": {
+            "Get all teams": "/api/teams",
+            "Head to Head": "/api/teamvteam?team1=Mumbai+Indians&team2=Chennai+Super+Kings",
+            "Team Record": "/api/team-record?team=Mumbai+Indians",
+            "All Matches of a Team": "/api/matches?team=Mumbai+Indians",
+            "Match Details": "/api/match?id=1312200",
+            "Points Table": "/api/points-table?season=2022"
+        }
+    })
 
 @app.route('/api/teams')
 def teams():
